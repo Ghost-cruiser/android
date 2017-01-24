@@ -32,12 +32,10 @@ public class GalleryAndroidActivity extends android.app.Activity {
         private Context mContext;
         private Integer[] mImageIds = {R.drawable.donut, R.drawable.eclair, R.drawable.lollipop,
                 R.drawable.nougat, R.drawable.cupcake, R.drawable.marshmallow};
-        public ImageAdapter(Context c) {
+        private ImageAdapter(Context c) {
             mContext = c;
-            TypedArray a = mContext.obtainStyledAttributes(
-                    R.styleable.GalleryAndroid);
-            mGalleryItemBackground = a.getResourceId(
-                    R.styleable.GalleryAndroid_android_galleryItemBackground, 0);
+            TypedArray a = mContext.obtainStyledAttributes(R.styleable.GalleryAndroid);
+            mGalleryItemBackground = a.getResourceId(R.styleable.GalleryAndroid_android_galleryItemBackground, 0);
             a.recycle();
         }
         public int getCount() {
