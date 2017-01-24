@@ -1,38 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent" >
 
     <TextView
-        android:text="@string/text_view"
-        android:layout_width="match_parent"
+        android:text="@string/user"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
         android:gravity="center"
         android:textSize="32sp"
         android:textColor="@color/colorAccent"
-        android:id="@+id/textView" />
+        android:id="@+id/textView"
+        android:layout_marginTop="300dp" />
 
     <EditText
-        android:hint="@string/text_hint"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
         android:gravity="center"
         android:inputType="textPersonName"
-        android:textSize="25sp"
+        android:textSize="32sp"
         android:textColor="@color/colorPrimary"
-        android:layout_below="@+id/textView"
-        android:id="@+id/editText" />
+        android:id="@+id/editText"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
 
     <Button
-        android:text="Button"
+        android:text="@string/submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:textSize="32sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAllCaps="false"
         android:layout_below="@+id/editText"
-        android:layout_alignStart="@+id/textView"
-        android:layout_marginTop="39dp"
-        android:id="@+id/button" />
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/Moonlight"
+        android:layout_above="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView" />
 </RelativeLayout>

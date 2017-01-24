@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">TD2</string>
-    <string name="text_view">BIENVENUE</string>
-    <string name="text_hint">Taper votre code PIN</string>
+    <string name="user">User :</string>
+    <string name="submit">Submit</string>
 </resources>
