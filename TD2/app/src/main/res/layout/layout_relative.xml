@@ -30,7 +30,7 @@
 
     <Button
         android:text="@string/submit"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/submit_width"
         android:layout_height="wrap_content"
         android:id="@+id/button"
         android:textSize="32sp"
@@ -42,7 +42,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/Moonlight"
+        app:srcCompat="@drawable/moonlight"
         android:layout_above="@+id/editText"
         android:layout_centerHorizontal="true"
         android:id="@+id/imageView" />
