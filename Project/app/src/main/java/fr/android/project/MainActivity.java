@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -12,6 +13,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
+    private static final String TAG = "Blue Project";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,5 +55,29 @@ public class MainActivity extends AppCompatActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    @Override
+    public void onResume() {
+        Log.i(TAG,"Main Activity Resume");
+        super.onResume();
+    }
+
+    @Override
+    public void onPause() {
+        Log.w(TAG,"Main Activity Pause");
+        super.onPause();
+    }
+
+    @Override
+    public void onStop() {
+        Log.d(TAG,"Main Activity Stop");
+        super.onStop();
+    }
+
+    @Override
+    public void onDestroy() {
+        Log.e(TAG,"Main Activity Destroy");
+        super.onDestroy();
     }
 }
