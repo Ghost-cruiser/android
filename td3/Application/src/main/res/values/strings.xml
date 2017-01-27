@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2013 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<resources>
+
+    <string name="describe_activity">Une activity représente la couche de présentation d’une application Android.Une manière
+        simplifiée de décrire une Activity est de dire qu’il s’agit d’un écran. Une Activity peut être une pop-up ou encore
+        transparente.</string>
+    <string name="describe_content">Grâce au ContentProvider, votre application peut partager des données avec d’autres
+        applications. Android contient une base de données SQLite qui est fréquemment utilisée en utilisant un
+        ContentProvider pour persister des données.</string>
+    <string name="describe_intent">Les Intents sont des messages asynchrones qui permettent à l’application de d’utiliser
+        des fonctionnalités d’autres composants du système Android tels que des Services ou des Activities.</string>
+    <string name="describe_service">Les services exécutent des taches de fond sans fournir d’interface utilisateur (UI).
+        Il peuvent émettre des notifications à l’utilisateur grâce au framework de notification d’Android.</string>
+
+    <string name="menu_settings">Settings</string>
+    <string name="menu_cupcake">Cupcake</string>
+    <string name="menu_eclair">Eclair</string>
+    <string name="menu_kitkat">Kitkat</string>
+    <string name="menu_lollipop">Lollipop</string>
+    <string name="menu_marshmallow">Marshmallow</string>
+    <string name="menu_nougat">Nougat</string>
+
+</resources>
